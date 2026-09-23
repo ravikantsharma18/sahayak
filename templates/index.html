@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sahayak Mandi | Price Forecast</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+</head>
+<body>
+  <div class="ticker"><div class="ticker-inner"><strong>✦ <span data-i18n="feed">MANUAL DELHI + PATNA FEED</span></strong><span>Tomato <b>₹25/kg</b> ↗ +6.4%</span><span>Onion <b>₹22/kg</b> → 0.0%</span><span>Wheat <b>₹32/kg</b> ↗ +3.5%</span><span>Potato <b>₹28/kg</b> ↗ +4.1%</span></div></div>
+  <header class="topbar"><a class="brand" href="#top"><span class="brand-mark">⌁</span><span><strong>Sahayak</strong><small>सहायक · PRICE INTELLIGENCE</small></span></a><nav><a href="#market-space" data-i18n="marketNav">Mandi Bazaar</a><a href="#forecast" data-i18n="forecastNav">Kisan Desk</a><a href="/demand">Demand forecast</a></nav><div class="top-actions"><button class="pill active" data-language="en" type="button">English</button><button class="pill" data-language="hi" type="button">हिंदी</button><button class="pill" data-language="mr" type="button">मराठी</button><button class="pill" data-language="ta" type="button">தமிழ்</button><button class="pill" data-language="gu" type="button">ગુજરાતી</button><button class="pill" data-language="bn" type="button">বাংলা</button><button class="pill" data-language="te" type="button">తెలుగు</button><button class="icon-button" id="theme" type="button" aria-label="Toggle dark mode">◐</button></div></header>
+  <main class="shell" id="top">
+    <section class="hero"><div class="hero-copy"><p class="eyebrow" data-i18n="eyebrow">SIH 2026 · SMART MANDI ASSISTANT</p><h1 data-i18n="heroTitle">किसानों को सीधे खरीदार और स्मार्ट लॉजिस्टिक्स से जोड़ना</h1><p data-i18n="heroBody">पारदर्शी मंडी भाव जानें, एआई द्वारा मांग का पूर्वानुमान देखें और बेहतर समय पर अपनी उपज बेचें।</p><div class="hero-actions"><a class="button primary" href="#market-space" data-i18n="seeMarket">बाज़ार देखें <span>↗</span></a><a class="button secondary" href="#forecast" data-i18n="makeForecast">अपना भाव अनुमान देखें</a></div></div><div class="hero-art"><span class="sun">☼</span><span class="leaf leaf-one">◒</span><span class="leaf leaf-two">◒</span><span class="field-line line-one"></span><span class="field-line line-two"></span><span class="field-line line-three"></span><strong>30<span>DAY<br>OUTLOOK</span></strong></div></section>
+    <section class="tomorrow-card"><div><p class="eyebrow" data-i18n="tomorrowEyebrow">NEXT MARKET DAY</p><h2 data-i18n="tomorrowTitle">Tomorrow's predicted price</h2><p class="muted" data-i18n="tomorrowBody">The first model estimate for your selected commodity and market.</p></div><div class="tomorrow-value"><span id="tomorrow-date">—</span><strong id="tomorrow-price">—</strong><small data-i18n="perQuintal">per quintal</small></div></section>
+    <section class="workspace" id="market-space"><div class="section-intro"><div><p class="eyebrow" data-i18n="marketEyebrow">MANDI BAZAAR · BIHAR</p><h2 data-i18n="workspaceTitle">आज का बाज़ार, कल की तैयारी</h2><p class="muted" data-i18n="workspaceBody">अपनी फसल और मंडी चुनें। हमारा मॉडल उपलब्ध बाजार क्रम से अगले दिनों का अनुमान तैयार करता है।</p></div><div class="today"><span data-i18n="anchored">आज की तारीख</span><strong id="today">—</strong></div></div>
+      <section class="controls" aria-label="Forecast controls"><label><span data-i18n="commodity">Commodity</span><select id="commodity"></select></label><label><span data-i18n="market">Market</span><select id="market"></select></label><label><span data-i18n="horizon">Horizon</span><select id="horizon"><option value="14">14 days</option><option value="30" selected>30 days</option><option value="60">60 days</option><option value="90">90 days</option></select></label><button id="run" class="button primary" type="button" data-i18n="run">अनुमान चलाएं <span>↗</span></button></section>
+      <section class="status" id="status">Loading market options...</section>
+      <section class="metrics"><article><span data-i18n="latest">Latest observed modal</span><strong id="latest">—</strong><small data-i18n="perQuintal">per quintal</small></article><article><span data-i18n="midpoint">Forecast midpoint</span><strong id="midpoint">—</strong><small data-i18n="selectedHorizon">next selected horizon</small></article><article><span data-i18n="sequence">Observed sequence</span><strong id="observations">—</strong><small data-i18n="marketRecords">ordered market records</small></article></section>
+      <section class="visual" id="forecast"><div class="section-heading"><div><p class="eyebrow" data-i18n="curve">FORWARD CURVE</p><h2 data-i18n="curveTitle">Expected modal price</h2></div><span id="range">—</span></div><div class="chart-wrap"><canvas id="chart"></canvas></div></section>
+      <section class="table-panel"><div class="section-heading"><div><p class="eyebrow" data-i18n="daily">DAILY VIEW</p><h2 data-i18n="ledger">Forecast ledger</h2></div></div><div class="table-scroll"><table><thead><tr><th data-i18n="date">Date</th><th data-i18n="expected">Expected modal price</th><th data-i18n="signal">Signal</th></tr></thead><tbody id="rows"></tbody></table></div></section>
+    </section>
+    <footer data-i18n="disclaimer">Forecasts are directional estimates. Source dates are treated as ordering information and every prediction is anchored to today.</footer>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

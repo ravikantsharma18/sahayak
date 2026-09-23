@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sahayak Mandi | Demand Forecast</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="ticker"><div class="ticker-inner"><strong>✦ <span data-i18n="feed">DEMAND INTELLIGENCE</span></strong><span data-i18n="localHistory">Local buyer history</span><span data-i18n="priceAware">Price-aware forecasts</span><span data-i18n="localData">Delhi + Patna data</span></div></div>
+  <header class="topbar"><a class="brand" href="/"><span class="brand-mark">⌁</span><span><strong>Sahayak</strong><small>सहायक · PRICE INTELLIGENCE</small></span></a><nav><a href="/" data-i18n="priceForecast">Price forecast</a><a class="nav-active" href="/demand" data-i18n="demandForecast">Demand forecast</a></nav><div class="top-actions"><button class="pill" data-language="en" type="button">English</button><button class="pill" data-language="hi" type="button">हिंदी</button><button class="pill" data-language="mr" type="button">मराठी</button><button class="pill" data-language="ta" type="button">தமிழ்</button><button class="pill" data-language="gu" type="button">ગુજરાતી</button><button class="pill" data-language="bn" type="button">বাংলা</button><button class="pill" data-language="te" type="button">తెలుగు</button></div></header>
+  <main class="shell demand-shell">
+    <section class="demand-heading"><p class="eyebrow" data-i18n="headingEyebrow">BUYER DEMAND · NEXT MARKET DAY</p><h1 data-i18n="heading">Plan tomorrow's demand</h1><p class="muted" data-i18n="intro">Choose a commodity and mandi. The model learns from previous quantities, prices, weekdays, and your saved purchases.</p></section>
+    <section class="demand-grid">
+      <section class="panel demand-panel">
+        <div class="section-heading"><div><p class="eyebrow" data-i18n="controlsEyebrow">FORECAST CONTROLS</p><h2 data-i18n="segmentTitle">Demand by segment</h2></div></div>
+        <div class="controls demand-controls">
+          <label><span data-i18n="commodity">Commodity</span><select id="demand-commodity"></select></label>
+          <label><span data-i18n="mandi">Mandi</span><select id="demand-mandi"></select></label>
+          <label><span data-i18n="nextPrice">Price for next day (optional)</span><input id="demand-price" type="number" min="0" step="0.01" placeholder="Use latest price"></label>
+          <button id="demand-run" class="button primary" type="button"><span data-i18n="forecastButton">Forecast demand</span> <span>↗</span></button>
+        </div>
+        <div class="status" id="demand-status">Loading demand history...</div>
+        <div class="demand-result" id="demand-result" hidden>
+          <div class="metrics"><article><span data-i18n="nextDemand">Next-day demand</span><strong id="next-demand">—</strong><small data-i18n="kilograms">kilograms</small></article><article><span data-i18n="historyUsed">History used</span><strong id="history-days">—</strong><small data-i18n="daysSegment">days in segment</small></article><article><span data-i18n="forecastPrice">Forecast price</span><strong id="forecast-price">—</strong><small data-i18n="perKilogram">per kilogram</small></article></div>
+          <div class="table-panel demand-table"><div class="section-heading"><div><p class="eyebrow" data-i18n="forwardView">FORWARD VIEW</p><h2 data-i18n="outlook">Demand outlook</h2></div></div><div class="table-scroll"><table><thead><tr><th data-i18n="date">Date</th><th data-i18n="expectedDemand">Expected demand</th><th data-i18n="priceUsed">Price used</th></tr></thead><tbody id="demand-rows"></tbody></table></div></div>
+        </div>
+      </section>
+      <section class="panel purchase-panel">
+        <div class="section-heading"><div><p class="eyebrow" data-i18n="purchasesEyebrow">YOUR PURCHASES</p><h2 data-i18n="addBuyer">Add buyer data</h2></div></div>
+        <p class="muted" data-i18n="purchaseHelp">Saved entries are included in the next forecast for the same commodity and mandi.</p>
+        <form id="purchase-form">
+          <label><span data-i18n="date">Date</span><input id="purchase-date" type="date" required></label>
+          <label><span data-i18n="commodity">Commodity</span><input id="purchase-commodity" list="commodity-list" required><datalist id="commodity-list"></datalist></label>
+          <label><span data-i18n="mandi">Mandi</span><input id="purchase-mandi" list="mandi-list" required><datalist id="mandi-list"></datalist></label>
+          <label><span data-i18n="quantity">Quantity (kg)</span><input id="purchase-quantity" type="number" min="0.01" step="0.01" required></label>
+          <label><span data-i18n="pricePerKg">Price per kg (INR)</span><input id="purchase-price" type="number" min="0.01" step="0.01" required></label>
+          <label><span data-i18n="totalAmount">Total amount (INR)</span><input id="purchase-amount" type="number" min="0.01" step="0.01" placeholder="Auto-calculated"></label>
+          <button class="button secondary" type="submit"><span data-i18n="savePurchase">Save purchase</span> <span>＋</span></button>
+        </form>
+        <div class="status" id="purchase-status" aria-live="polite"></div>
+      </section>
+    </section>
+    <footer data-i18n="disclaimer">Demand forecasts are directional estimates. Add actual purchases to make the selected segment more representative over time.</footer>
+  </main>
+  <script src="/static/demand.js"></script>
+</body>
+</html>
