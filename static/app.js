@@ -9,7 +9,7 @@ const copy = {
     heroBody: 'See transparent mandi prices, get AI-powered demand forecasts, and choose a better time to sell your produce.',
     seeMarket: 'See the market', makeForecast: 'View your price forecast', metricOne: 'Better prices than middlemen', metricOneSub: 'Direct farmer sourcing',
     metricTwo: 'Average farmer net income lift', metricTwoSub: 'Saved commission retained', metricThree: 'Reduction in crop distress sales', metricThreeSub: 'Better timing with forecasts', metricFour: 'Transport and fuel savings', metricFourSub: 'Consolidated route planning',
-    marketEyebrow: 'MANDI BAZAAR · BIHAR', workspaceTitle: 'Today’s market, tomorrow’s plan', workspaceBody: 'Choose your crop and mandi. The model uses the available market sequence to prepare the next-days outlook.', anchored: 'Anchored to today', commodity: 'Commodity', market: 'Market', horizon: 'Horizon', run: 'Run forecast', latest: 'Latest observed modal', perQuintal: 'per quintal', midpoint: 'Forecast midpoint', selectedHorizon: 'next selected horizon', sequence: 'Observed sequence', marketRecords: 'ordered market records', tomorrowEyebrow: 'NEXT MARKET DAY', tomorrowTitle: "Tomorrow's predicted price", tomorrowBody: 'The first model estimate for your selected commodity and market.', curve: 'FORWARD CURVE', curveTitle: 'Expected modal price', daily: 'DAILY VIEW', ledger: 'Forecast ledger', date: 'Date', expected: 'Expected modal price', signal: 'Signal', disclaimer: 'Forecasts are directional estimates. Source dates are treated as ordering information and every prediction is anchored to today.', days: 'days', training: 'Training on the selected market sequence...', ready: 'day outlook ready', unavailable: 'Not enough records for this produce and mandi.', error: 'Could not calculate this selection.'
+    marketEyebrow: 'MANDI BAZAAR · BIHAR', workspaceTitle: 'Today’s market, tomorrow’s plan', workspaceBody: 'Choose your crop and mandi. The model uses the available market sequence to prepare the next-days outlook.', anchored: 'Anchored to today', commodity: 'Commodity', market: 'Market', horizon: 'Horizon', run: 'Run price forecast', latest: 'Latest observed modal', perQuintal: 'per quintal', midpoint: 'Forecast midpoint', selectedHorizon: 'next selected horizon', sequence: 'Observed sequence', marketRecords: 'ordered market records', tomorrowEyebrow: 'NEXT MARKET DAY', tomorrowTitle: "Tomorrow's predicted price", tomorrowBody: 'The first model estimate for your selected commodity and market.', curve: 'FORWARD CURVE', curveTitle: 'Expected modal price', daily: 'DAILY VIEW', ledger: 'Forecast ledger', date: 'Date', expected: 'Expected modal price', signal: 'Signal', disclaimer: 'Forecasts are directional estimates. Source dates are treated as ordering information and every prediction is anchored to today.', days: 'days', training: 'Training on the selected market sequence...', ready: 'day outlook ready', unavailable: 'Not enough records for this produce and mandi.', error: 'Could not calculate this selection.'
   },
   hi: {
     feed: 'एगमार्कनेट मंडी फीड', marketNav: 'मंडी बाज़ार', forecastNav: 'किसान डेस्क',
@@ -17,7 +17,7 @@ const copy = {
     heroBody: 'पारदर्शी मंडी भाव जानें, एआई द्वारा मांग का पूर्वानुमान देखें और बेहतर समय पर अपनी उपज बेचें।',
     seeMarket: 'बाज़ार देखें', makeForecast: 'अपना भाव अनुमान देखें', metricOne: 'बिचौलियों से बेहतर भाव', metricOneSub: 'सीधे किसान से खरीद',
     metricTwo: 'किसान की औसत शुद्ध आय वृद्धि', metricTwoSub: 'कमीशन की बचत', metricThree: 'फसल बिक्री में कमी', metricThreeSub: 'पूर्वानुमान से बेहतर समय', metricFour: 'परिवहन और ईंधन की बचत', metricFourSub: 'संगठित मार्ग योजना',
-    marketEyebrow: 'मंडी बाज़ार · बिहार', workspaceTitle: 'आज का बाज़ार, कल की तैयारी', workspaceBody: 'अपनी फसल और मंडी चुनें। मॉडल उपलब्ध बाजार क्रम से अगले दिनों का अनुमान तैयार करता है।', anchored: 'आज की तारीख', commodity: 'फसल', market: 'मंडी', horizon: 'अवधि', run: 'अनुमान चलाएं', latest: 'नवीनतम मंडी भाव', perQuintal: 'प्रति क्विंटल', midpoint: 'अनुमानित औसत भाव', selectedHorizon: 'चुनी गई अवधि', sequence: 'उपलब्ध रिकॉर्ड', marketRecords: 'क्रमबद्ध बाजार रिकॉर्ड', tomorrowEyebrow: 'अगला बाजार दिन', tomorrowTitle: 'कल का अनुमानित भाव', tomorrowBody: 'आपकी चुनी हुई फसल और मंडी के लिए मॉडल का पहला अनुमान।', curve: 'आगे का अनुमान', curveTitle: 'अनुमानित मंडी भाव', daily: 'दैनिक विवरण', ledger: 'भाव अनुमान सूची', date: 'तारीख', expected: 'अनुमानित भाव', signal: 'संकेत', disclaimer: 'यह अनुमान दिशात्मक है। स्रोत की तारीखों का उपयोग केवल क्रम के लिए किया गया है और हर अनुमान आज से शुरू होता है।', days: 'दिन', training: 'चयनित बाजार क्रम पर प्रशिक्षण चल रहा है...', ready: 'दिन का अनुमान तैयार', unavailable: 'इस फसल और मंडी के लिए पर्याप्त रिकॉर्ड नहीं हैं।', error: 'इस चयन की गणना नहीं हो सकी।'
+    marketEyebrow: 'मंडी बाज़ार · बिहार', workspaceTitle: 'आज का बाज़ार, कल की तैयारी', workspaceBody: 'अपनी फसल और मंडी चुनें। मॉडल उपलब्ध बाजार क्रम से अगले दिनों का अनुमान तैयार करता है।', anchored: 'आज की तारीख', commodity: 'फसल', market: 'मंडी', horizon: 'अवधि', run: 'भाव अनुमान चलाएं', latest: 'नवीनतम मंडी भाव', perQuintal: 'प्रति क्विंटल', midpoint: 'अनुमानित औसत भाव', selectedHorizon: 'चुनी गई अवधि', sequence: 'उपलब्ध रिकॉर्ड', marketRecords: 'क्रमबद्ध बाजार रिकॉर्ड', tomorrowEyebrow: 'अगला बाजार दिन', tomorrowTitle: 'कल का अनुमानित भाव', tomorrowBody: 'आपकी चुनी हुई फसल और मंडी के लिए मॉडल का पहला अनुमान।', curve: 'आगे का अनुमान', curveTitle: 'अनुमानित मंडी भाव', daily: 'दैनिक विवरण', ledger: 'भाव अनुमान सूची', date: 'तारीख', expected: 'अनुमानित भाव', signal: 'संकेत', disclaimer: 'यह अनुमान दिशात्मक है। स्रोत की तारीखों का उपयोग केवल क्रम के लिए किया गया है और हर अनुमान आज से शुरू होता है।', days: 'दिन', training: 'चयनित बाजार क्रम पर प्रशिक्षण चल रहा है...', ready: 'दिन का अनुमान तैयार', unavailable: 'इस फसल और मंडी के लिए पर्याप्त रिकॉर्ड नहीं हैं।', error: 'इस चयन की गणना नहीं हो सकी।'
   },
   mr: {
     feed: 'एगमार्कनेट मंडी फीड', marketNav: 'मंडी बाजार', forecastNav: 'शेतकरी डेस्क', eyebrow: 'SIH 2026 · स्मार्ट मंडी सहाय्यक', heroTitle: 'शेतकऱ्यांना थेट खरेदीदार आणि स्मार्ट लॉजिस्टिक्सशी जोडा', heroBody: 'पारदर्शक मंडी भाव पहा, एआय अंदाज मिळवा आणि पीक विकण्यासाठी योग्य वेळ निवडा.', seeMarket: 'बाजार पहा', makeForecast: 'भावाचा अंदाज पहा', metricOne: 'दलालांपेक्षा चांगला भाव', metricOneSub: 'थेट शेतकरी खरेदी', metricTwo: 'शेतकऱ्यांच्या निव्वळ उत्पन्नात वाढ', metricTwoSub: 'वाचवलेले कमिशन', metricThree: 'घाईने होणारी पीक विक्री कमी', metricThreeSub: 'अंदाजामुळे योग्य वेळ', metricFour: 'वाहतूक आणि इंधन बचत', metricFourSub: 'एकत्रित मार्ग नियोजन', marketEyebrow: 'मंडी बाजार · बिहार', workspaceTitle: 'आजचा बाजार, उद्याची तयारी', workspaceBody: 'तुमचे पीक आणि मंडी निवडा. मॉडेल पुढील दिवसांचा अंदाज तयार करते.', anchored: 'आजची तारीख', commodity: 'पीक', market: 'मंडी', horizon: 'कालावधी', run: 'अंदाज चालवा', latest: 'नवीनतम मंडी भाव', perQuintal: 'प्रति क्विंटल', midpoint: 'अंदाजे सरासरी भाव', selectedHorizon: 'निवडलेला कालावधी', sequence: 'उपलब्ध नोंदी', marketRecords: 'बाजार नोंदी', tomorrowEyebrow: 'पुढील बाजार दिवस', tomorrowTitle: 'उद्याचा अंदाजित भाव', tomorrowBody: 'निवडलेल्या पिकासाठी मॉडेलचा पहिला अंदाज.', curve: 'पुढील अंदाज', curveTitle: 'अपेक्षित मंडी भाव', daily: 'दैनिक माहिती', ledger: 'भाव अंदाज यादी', date: 'तारीख', expected: 'अपेक्षित मंडी भाव', signal: 'संकेत', disclaimer: 'हे दिशादर्शक अंदाज आहेत. प्रत्येक अंदाज आजपासून सुरू होतो.', days: 'दिवस', training: 'निवडलेल्या बाजार क्रमावर प्रशिक्षण सुरू आहे...', ready: 'दिवसांचा अंदाज तयार', unavailable: 'या पिकासाठी आणि मंडीसाठी पुरेशा नोंदी नाहीत.', error: 'या निवडीची गणना करता आली नाही.'
@@ -85,7 +85,6 @@ async function refreshAvailability(preferDefaultMarket = false) {
     }
   }
   await refreshHorizons();
-  if (data.markets.length && $('horizon').options.length) await runForecast();
 }
 
 async function refreshHorizons() {
@@ -96,6 +95,7 @@ async function refreshHorizons() {
   if (data.horizons.includes(Number(current))) $('horizon').value = current;
   $('run').disabled = !data.horizons.length;
   if (!data.horizons.length) $('status').textContent = copy[language].unavailable;
+  else $('status').textContent = 'Choose the options, then press Run price forecast.';
 }
 
 async function runForecast() {
@@ -170,12 +170,12 @@ function setLanguage(nextLanguage) {
   document.querySelectorAll('[data-i18n]').forEach((element) => { element.textContent = copy[language][element.dataset.i18n]; });
   document.querySelectorAll('[data-language]').forEach((button) => button.classList.toggle('active', button.dataset.language === language));
   refreshDropdownLabels();
-  refreshHorizons().then(runForecast);
+  refreshHorizons();
 }
 
 document.querySelectorAll('[data-language]').forEach((button) => button.addEventListener('click', () => setLanguage(button.dataset.language)));
 $('commodity').addEventListener('change', () => refreshAvailability());
-$('market').addEventListener('change', async () => { await refreshHorizons(); if ($('horizon').options.length) runForecast(); });
+$('market').addEventListener('change', refreshHorizons);
 $('run').addEventListener('click', runForecast);
 if (localStorage.getItem('sahayak-theme') === 'dark') document.body.classList.add('dark');
 document.querySelectorAll('[data-i18n]').forEach((element) => { element.textContent = copy[language][element.dataset.i18n]; });

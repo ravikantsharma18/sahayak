@@ -44,6 +44,9 @@ h2 { font-size:26px; letter-spacing:-.7px; margin:0; }
 .hero p:not(.eyebrow) { max-width:650px; color:#d7edda; line-height:1.7; margin:20px 0 28px; }
 .hero-actions { display:flex; gap:12px; flex-wrap:wrap; }
 .button { display:inline-flex; align-items:center; justify-content:center; gap:10px; border:0; padding:14px 20px; cursor:pointer; text-decoration:none; font:700 13px Manrope,'Noto Sans Devanagari',sans-serif; }
+.forecast-action { min-height:48px; box-shadow:0 8px 18px #e2773826; }
+.forecast-action:hover:not(:disabled) { transform:translateY(-1px); filter:brightness(1.04); }
+.forecast-action:focus-visible { outline:3px solid #e9a11a; outline-offset:3px; }
 .button.primary { background:var(--orange); color:white; }
 .hero .button.secondary { background:white; color:var(--forest); }
 .button:disabled { opacity:.55; cursor:wait; }
